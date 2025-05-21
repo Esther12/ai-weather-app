@@ -2,7 +2,6 @@ import React from 'react';
 import { Box, Typography, useTheme, useMediaQuery } from '@mui/material';
 import { ClothingItem } from './ClothingItem';
 import { MobileCarousel } from './MobileCarousel';
-import clothingData from '../data/clothing-details.json';
 
 interface ClothingItem {
     name: string;
@@ -16,24 +15,6 @@ interface ClothingRecommendationDisplayProps {
         accessories: string[];
     };
 }
-
-const getImageUrl = (itemName: string, category: string) => {
-    try {
-        // Find the item in clothing-details.json
-        const items = (clothingData.clothing as any)[category];
-        const item = Object.values(items).find((item: any) => item.name === itemName);
-        
-        if (!item) {
-            console.error(`Item not found: ${itemName} in category ${category}`);
-            return '';
-        }
-
-        return new URL(`../assets/${(item as any).imagePath}`, import.meta.url).href;
-    } catch (err) {
-        console.error('Error creating image path:', err);
-        return '';
-    }
-};
 
 const ClothingSection: React.FC<{ title: string; items: string[]; type: string }> = ({ title, items, type }) => {
     const theme = useTheme();

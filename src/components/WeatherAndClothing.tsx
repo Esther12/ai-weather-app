@@ -1,8 +1,8 @@
 import React, { useState, useCallback, useEffect } from 'react';
-import { Box, Card, CardContent, Typography, CircularProgress, Button } from '@mui/material';
+import { Box, Card, CardContent, Typography, CircularProgress } from '@mui/material';
 import type { ForecastItem } from '../types/weatherTypes';
 import { weatherService } from '../services/weatherService';
-import { getNext12HoursForecast, getClothingRecommendations, type ClothingRecommendation } from '../utils/weatherUtils';
+import { getNext12HoursForecast, getClothingRecommendations } from '../utils/weatherUtils';
 import Cookies from 'js-cookie';
 import ClothingRecommendationDisplay from './ClothingRecommendationDisplay';
 

@@ -1,4 +1,3 @@
-import React from 'react';
 import { Box, Typography } from '@mui/material';
 import type { ClothingComponent } from '../types/clothing';
 import clothingData from '../data/clothing-details.json';
