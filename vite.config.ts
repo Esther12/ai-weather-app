@@ -4,7 +4,7 @@ import path from 'path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: 'https://Esther12.github.io/ai-weather-app',
+  base: 'https://esther12.github.io/ai-weather-app',
   plugins: [react()],
   resolve: {
     alias: {
