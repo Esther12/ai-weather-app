@@ -1,0 +1,95 @@
+.clothing-recommendations {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.clothing-recommendations h2 {
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.description {
+  text-align: center;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.recommendations-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.clothing-section {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.clothing-section h3 {
+  color: #444;
+  margin-bottom: 15px;
+  text-align: center;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 10px;
+}
+
+.clothing-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 15px;
+}
+
+.clothing-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.clothing-item img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 10px;
+  padding: 10px;
+  background: #f8f8f8;
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+}
+
+.clothing-item img:hover {
+  transform: scale(1.05);
+}
+
+.clothing-item span {
+  color: #555;
+  font-size: 0.9em;
+  text-transform: capitalize;
+}
+
+.clothing-recommendations.loading,
+.clothing-recommendations.error,
+.clothing-recommendations.empty {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+  font-size: 1.1em;
+}
+
+.clothing-recommendations.error {
+  color: #d32f2f;
+}
+
+@media (max-width: 768px) {
+  .recommendations-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .clothing-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+} 

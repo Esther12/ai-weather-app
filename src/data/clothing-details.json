@@ -1,0 +1,114 @@
+{
+  "clothing": {
+    "tops": {
+      "light-tshirt": {
+        "name": "T-Shirt",
+        "type": "top",
+        "material": "cotton",
+        "weight": "light",
+        "thickness": 1,
+        "suitable_conditions": ["sunny", "clear", "partly_cloudy"],
+        "layering_order": 1,
+        "description": "Breathable cotton t-shirt perfect for warm weather",
+        "imagePath": "clothing/tops/t-shirt.jpeg"
+      },
+      "sweater": {
+        "name": "Sweater",
+        "type": "top",
+        "material": "cotton",
+        "weight": "medium",
+        "thickness": 2,
+        "suitable_conditions": ["cloudy", "windy", "cool"],
+        "layering_order": 2,
+        "description": "Warm wool sweater for cool weather",
+        "imagePath": "clothing/tops/sweater.jpeg"
+      },
+      "jacket": {
+        "name": "Blazer",
+        "type": "outerwear",
+        "material": "polyester",
+        "weight": "medium",
+        "thickness": 3,
+        "suitable_conditions": ["windy", "cool"],
+        "layering_order": 3,
+        "description": "Water-resistant jacket for protection against light rain and wind",
+        "imagePath": "clothing/tops/blazer.jpeg"
+      },
+      "winter-coat": {
+        "name": "Winter Coat",
+        "type": "outerwear",
+        "material": "wool",
+        "weight": "heavy",
+        "thickness": 4,
+        "suitable_conditions": ["snow", "freezing", "windy"],
+        "layering_order": 3,
+        "description": "Heavy insulated coat for winter weather",
+        "imagePath": "clothing/tops/coat.jpeg"
+      }
+    },
+    "bottoms": {
+      "shorts": {
+        "name": "Shorts",
+        "type": "bottom",
+        "material": "cotton",
+        "weight": "light",
+        "thickness": 0,
+        "suitable_conditions": ["sunny", "clear", "hot"],
+        "description": "Light cotton shorts for hot weather",
+        "imagePath": "clothing/bottoms/shorts.jpeg"
+      },
+      "jeans": {
+        "name": "Jeans",
+        "type": "bottom",
+        "material": "cotton",
+        "weight": "medium",
+        "thickness": 3,
+        "suitable_conditions": ["clear", "cloudy", "mild"],
+        "description": "Versatile denim jeans for mild temperatures",
+        "imagePath": "clothing/bottoms/jeans.jpeg"
+      },
+      "warm-pants": {
+        "name": "Pants",
+        "type": "bottom",
+        "material": "cotton",
+        "weight": "medium",
+        "thickness": 2,
+        "suitable_conditions": ["cold", "freezing"],
+        "description": "Insulated pants for cold weather",
+        "imagePath": "clothing/bottoms/pants.jpeg"
+      }
+    },
+    "accessories": {
+      "scarf": {
+        "name": "Scarf",
+        "type": "accessory",
+        "material": "wool",
+        "weight": "light",
+        "thickness": 3,
+        "suitable_conditions": ["cold", "windy", "freezing"],
+        "description": "Warm wool scarf for neck protection",
+        "imagePath": "clothing/accessories/scarf.jpeg"
+      },
+      "gloves": {
+        "name": "Gloves",
+        "type": "accessory",
+        "material": "fur",
+        "weight": "light",
+        "thickness": 4,
+        "suitable_conditions": ["cold", "snow", "freezing"],
+        "description": "Insulated gloves for hand protection",
+        "imagePath": "clothing/accessories/glove.jpeg"
+      },
+      "hat": {
+        "name": "Hat",
+        "type": "accessory",
+        "material": "cotton",
+        "weight": "medium",
+        "thickness": 3,
+        "suitable_conditions": ["cold", "windy", "rainy"],
+        "description": "Warm hat for head protection",
+        "imagePath": "clothing/accessories/hat.jpeg"
+      }
+    }
+  }
+} 
