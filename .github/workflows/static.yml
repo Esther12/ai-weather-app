@@ -41,7 +41,11 @@ jobs:
       - name: Build
         run: npm run build
         env:
-          VITE_API_KEY: ${{ secrets.VITE_API_KEY }}
+          VITE_OPENWEATHER_API_KEY: ${{ secrets.VITE_OPENWEATHER_API_KEY }}
+          VITE_GEO_API_BASE_URL: ${{ secrets.VITE_GEO_API_BASE_URL }}
+          VITE_WEATHER_API_BASE_URL: ${{ secrets.VITE_WEATHER_API_BASE_URL }}
+          VITE_WEATHER_UNITS: ${{ secrets.VITE_WEATHER_UNITS }}
+          VITE_DEFAULT_COUNTRY: ${{ secrets.VITE_DEFAULT_COUNTRY }}
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
